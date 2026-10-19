@@ -55,6 +55,18 @@ document.querySelectorAll("[data-mediation-filter]").forEach(link => {
 
 // Traductions françaises / anglaises
 const dictionary = {
+  // Parcours et projets — libellés et descriptions actualisés
+  "Chargé·e d’enseignement — Traitement statistique des données": "Lecturer — Statistical data processing",
+  "Chargé·e d’enseignement — Sciences cognitives, programmation et statistiques": "Lecturer — Cognitive science, programming and statistics",
+  "Assistant·e de recherche — Intentions hostiles": "Research assistant — Hostile intentions",
+  "Assistant·e de recherche — Analyse topologique des données": "Research assistant — Topological data analysis",
+  "Assistant·e de recherche — SEVIALANO": "Research assistant — SEVIALANO",
+  "Approches combinées en neuropsychologie et neuro-hépatologie pour étudier l’évolution vers le carcinome hépatocellulaire.": "Combined neuropsychological and neuro-hepatological approaches to studying progression towards hepatocellular carcinoma.",
+  "Conception et programmation d’une tâche cognitive intégrant des mesures physiologiques (ECG, ICG, EDA), développement de pipelines de traitement des signaux et de calcul de scores composites, et rédaction de documentation pour assurer la reproductibilité.": "Design and programming of a cognitive task integrating physiological measures (ECG, ICG, EDA); development of signal-processing and composite-score pipelines; and preparation of documentation to support reproducibility.",
+  "Approches neuropsychologiques et neuro-hépatologiques de l’évolution vers le carcinome hépatocellulaire ; programmation d’une tâche cognitive avec mesures physiologiques (ECG, ICG, EDA) et développement de pipelines d’analyse.": "Neuropsychological and neuro-hepatological approaches to progression towards hepatocellular carcinoma; programming a cognitive task with physiological measures (ECG, ICG, EDA) and developing analysis pipelines.",
+  "Formation à la conception de dispositifs de médiation scientifique.": "Training in the design of science communication activities.",
+  "Mention très bien.": "Graduated with high honours.",
+
   "Description et méthodes": "Description and methods",
   "Recherche · Ingénieur·e de recherche · Inserm U1290 · RESHAPE · Université Lumière Lyon 2": "Research · Research engineer · Inserm U1290 · RESHAPE · Lumière Lyon 2 University",
   "Recherche · Ingénieur·e de recherche · Inserm U1290 · RESHAPE · Université Lumière Lyon 2 · iMIND": "Research · Research engineer · Inserm U1290 · RESHAPE · Lumière Lyon 2 University · iMIND",
