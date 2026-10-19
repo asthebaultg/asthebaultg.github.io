@@ -2188,3 +2188,80 @@ em {
     padding: 14px 12px 18px;
   }
 }
+
+/* ============================================================
+   ACCUEIL — Mise en page sur téléphone
+   ------------------------------------------------------------
+   Le portrait passe sous le texte et les boutons. Les formes
+   décoratives restent contenues dans la zone de l'image.
+   ============================================================ */
+@media (max-width: 700px) {
+  .hero {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 24px;
+    align-items: start;
+    padding-top: 42px;
+    padding-bottom: 52px;
+  }
+
+  .hero-copy {
+    min-width: 0;
+    width: 100%;
+  }
+
+  .hero-art {
+    position: relative;
+    grid-column: 1;
+    width: min(100%, 350px);
+    max-width: 350px;
+    height: 310px;
+    margin: 0 auto;
+    isolation: isolate;
+  }
+
+  .hero-portrait {
+    position: absolute;
+    width: 64%;
+    height: 79%;
+    left: 18%;
+    top: 10%;
+    object-fit: cover;
+    object-position: center 20%;
+    z-index: 1;
+  }
+
+  .hero-art .blob-lilac {
+    width: 62%;
+    height: 79%;
+    left: 8%;
+    top: 12%;
+  }
+
+  .hero-art .blob-blue {
+    width: 58%;
+    height: 75%;
+    right: 2%;
+    top: 3%;
+  }
+
+  .hero-art .blob-peach {
+    width: 52%;
+    height: 48%;
+    right: 4%;
+    bottom: 3%;
+  }
+
+  .hero-art .blob-mint {
+    width: 44%;
+    height: 45%;
+    left: 4%;
+    bottom: 6%;
+  }
+}
+
+@media (max-width: 380px) {
+  .hero-art {
+    height: 270px;
+  }
+}
