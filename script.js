@@ -55,18 +55,6 @@ document.querySelectorAll("[data-mediation-filter]").forEach(link => {
 
 // Traductions françaises / anglaises
 const dictionary = {
-  // Parcours et projets — libellés et descriptions actualisés
-  "Chargé·e d’enseignement — Traitement statistique des données": "Lecturer — Statistical data processing",
-  "Chargé·e d’enseignement — Sciences cognitives, programmation et statistiques": "Lecturer — Cognitive science, programming and statistics",
-  "Assistant·e de recherche — Intentions hostiles": "Research assistant — Hostile intentions",
-  "Assistant·e de recherche — Analyse topologique des données": "Research assistant — Topological data analysis",
-  "Assistant·e de recherche — SEVIALANO": "Research assistant — SEVIALANO",
-  "Approches combinées en neuropsychologie et neuro-hépatologie pour étudier l’évolution vers le carcinome hépatocellulaire.": "Combined neuropsychological and neuro-hepatological approaches to studying progression towards hepatocellular carcinoma.",
-  "Conception et programmation d’une tâche cognitive intégrant des mesures physiologiques (ECG, ICG, EDA), développement de pipelines de traitement des signaux et de calcul de scores composites, et rédaction de documentation pour assurer la reproductibilité.": "Design and programming of a cognitive task integrating physiological measures (ECG, ICG, EDA); development of signal-processing and composite-score pipelines; and preparation of documentation to support reproducibility.",
-  "Approches neuropsychologiques et neuro-hépatologiques de l’évolution vers le carcinome hépatocellulaire ; programmation d’une tâche cognitive avec mesures physiologiques (ECG, ICG, EDA) et développement de pipelines d’analyse.": "Neuropsychological and neuro-hepatological approaches to progression towards hepatocellular carcinoma; programming a cognitive task with physiological measures (ECG, ICG, EDA) and developing analysis pipelines.",
-  "Formation à la conception de dispositifs de médiation scientifique.": "Training in the design of science communication activities.",
-  "Mention très bien.": "Graduated with high honours.",
-
   "Description et méthodes": "Description and methods",
   "Recherche · Ingénieur·e de recherche · Inserm U1290 · RESHAPE · Université Lumière Lyon 2": "Research · Research engineer · Inserm U1290 · RESHAPE · Lumière Lyon 2 University",
   "Recherche · Ingénieur·e de recherche · Inserm U1290 · RESHAPE · Université Lumière Lyon 2 · iMIND": "Research · Research engineer · Inserm U1290 · RESHAPE · Lumière Lyon 2 University · iMIND",
@@ -564,6 +552,24 @@ Object.assign(dictionary, {
   "Indices comportementaux non verbaux, traits de personnalité et intentions hostiles ; mise en place d’expériences, application web de codage vidéo et analyse de données.": "Nonverbal behavioural cues, personality traits and hostile intentions; experimental setup, web-based video coding and data analysis.",
   "Analyse topologique des données et théorie des signatures ; programmation Python et applications aux données neuroscientifiques.": "Topological data analysis and signature theory; Python programming and applications to neuroscience data.",
   "Projet SEVIALANO : tâches expérimentales, données comportementales, eye-tracking et imagerie TEP-IRM.": "SEVIALANO project: experimental tasks, behavioural data, eye-tracking and PET-MRI imaging."
+});
+
+// Traductions — Orientation, interviews et vie associative
+Object.assign(dictionary, {
+  "échanges et orientation.": "outreach and guidance.",
+  "Orientation & échanges": "Guidance & conversations",
+  "Rencontres et accompagnement autour des études, de l’orientation et des parcours professionnels.": "Discussions and guidance about studying, education and career pathways.",
+  "Vidéo · Estigma · Vie associative": "Video · Estigma · Community involvement",
+  "Estigma, l’engagement associatif et mon parcours": "Estigma, community involvement and my journey",
+  "Présentation d’Estigma et de mon expérience associative, ainsi que de mon parcours.": "Introducing Estigma, my involvement in student associations and my journey.",
+  "Voir la vidéo sur Instagram ↗": "Watch on Instagram ↗",
+  "Voir l’interview ↗": "Watch the interview ↗",
+  "Interview · Allae Studio · juin 2026": "Interview · Allae Studio · June 2026",
+  "Interview · Nebullae · 2024": "Interview · Nebullae · 2024",
+  "Interview · Estigma · juin 2024": "Interview · Estigma · June 2024",
+  "Entretien autour des neuromythes et des sciences cognitives.": "Interview about neuromyths and cognitive science.",
+  "Entretien autour des sciences cognitives et de la criminologie.": "Interview about cognitive science and criminology.",
+  "Entretien consacré à mon parcours de formation et à mes activités.": "Interview about my education and activities."
 });
 
 const originalNodes = [...document.querySelectorAll("main,header,footer")].flatMap(root=>{const walker=document.createTreeWalker(root,NodeFilter.SHOW_TEXT);let n,out=[];while(n=walker.nextNode())if(n.nodeValue.trim())out.push([n,n.nodeValue]);return out});
