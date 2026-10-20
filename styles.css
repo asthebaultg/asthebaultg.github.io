@@ -2555,3 +2555,114 @@ em {
 }
 .footer-osf { color: #2674b8; font-size: .53rem; }
 .footer-rg { color: #00a99d; font-size: .8rem; }
+
+/* ============================================================
+   NAVIGATION — Panneau mobile lisible et défilable
+   Le panneau s'ouvre sous l'en-tête et occupe l'écran disponible.
+   ============================================================ */
+@media (max-width: 700px) {
+  .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: var(--white, #fff);
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+    overflow: visible;
+  }
+
+  .site-header .nav-row {
+    position: static;
+    min-height: 76px;
+  }
+
+  .site-header .menu-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 116px;
+    min-height: 52px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+
+  #nav.nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    bottom: auto;
+    width: 100%;
+    height: calc(100vh - 76px);
+    height: calc(100dvh - 76px);
+    max-height: none;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior-y: contain;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    gap: 7px;
+    padding: 18px 22px max(50px, env(safe-area-inset-bottom));
+    background: var(--white, #fff);
+    box-shadow: 0 20px 40px rgba(31, 25, 48, .14);
+    z-index: 1001;
+  }
+
+  #nav.nav.open { display: flex; }
+
+  #nav.nav .nav-dropdown {
+    display: block;
+    position: static;
+    width: 100%;
+    flex: 0 0 auto;
+  }
+
+  #nav.nav .nav-drop-trigger,
+  #nav.nav > a {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: left;
+    font-size: 1.04rem;
+    line-height: 1.4;
+    padding: 13px 10px;
+    border-radius: 10px;
+  }
+
+  #nav.nav .nav-submenu {
+    display: none;
+    position: static;
+    width: 100%;
+    min-width: 0;
+    max-height: none;
+    margin: 0 0 9px;
+    padding: 3px 0 7px 12px;
+    box-sizing: border-box;
+    border: 0;
+    box-shadow: none;
+    background: transparent;
+  }
+
+  #nav.nav .nav-dropdown.expanded > .nav-submenu {
+    display: block;
+  }
+
+  #nav.nav .nav-submenu a {
+    display: block;
+    width: 100%;
+    padding: 12px 12px;
+    font-size: .96rem;
+    line-height: 1.35;
+    white-space: normal;
+  }
+
+  #nav.nav .lang-toggle,
+  #nav.nav .theme-toggle {
+    flex: 0 0 auto;
+    align-self: flex-start;
+  }
+}
