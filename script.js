@@ -155,6 +155,20 @@ const dictionary = {
   "Ateliers & jeux": "Workshops & games",
   "Conférences": "Talks",
   "Écrits": "Writing",
+  "Textes engagés": "Advocacy writing",
+  "Lire sur Medium ↗": "Read on Medium ↗",
+  "Récit · Féminisme et violences sexuelles": "Personal essay · Feminism and sexual violence",
+  "Slam · Écoféminisme": "Slam poem · Ecofeminism",
+  "Article · Justice environnementale": "Article · Environmental justice",
+  "Article · Écoféminisme": "Article · Ecofeminism",
+  "Circé avait ses cochons, moi j’ai mes chiffres": "Circe had her pigs, I have my numbers",
+  "Je suis une personne : un slam écoféministe": "I am a person: an ecofeminist slam poem",
+  "Quand on a grandi avec peu, comment penser l’écologie sans culpabilité ?": "Growing up with little: how can we think about ecology without guilt?",
+  "Je suis née femelle, dans un monde qui épuise mes ressources : du corps à la planète, même combat.": "Born female in a world that exhausts my resources: from bodies to the planet, one struggle",
+  "Un récit personnel sur les violences sexuelles, le consentement et les écarts entre connaissances statistiques et expériences vécues.": "A personal essay on sexual violence, consent, and the gap between statistical knowledge and lived experience.",
+  "Un texte poétique et personnel croisant rapport au corps, genre, animaux, écologie et émancipation.": "A personal poetic text connecting embodiment, gender, animals, ecology, and emancipation.",
+  "Une réflexion sur les inégalités sociales, la précarité et les injonctions individuelles à adopter des comportements écologiques.": "A reflection on social inequalities, financial hardship, and individual pressures to adopt environmentally friendly behaviours.",
+  "Un texte sur les liens entre domination des corps, exploitation animale et destruction des écosystèmes.": "A text exploring the links between control over bodies, animal exploitation, and ecosystem destruction.",
   "Médias": "Media",
   "Voir ↗": "View ↗",
   "Défiler pour découvrir": "Scroll to explore",
@@ -502,6 +516,12 @@ const dictionary = {
   "04 / Médiation": "04 / Outreach",
   "05 / Associations": "05 / Associations"
 };
+// Associations — textes ajoutés en français et en anglais
+Object.assign(dictionary, {
+  "Contributions éditoriales · Modération Discord": "Editorial contributions · Discord moderation",
+  "Préparation et relecture de publications sur différentes thématiques féministes, ainsi que modération du serveur Discord de l'association.": "Preparing and proofreading posts on various feminist topics, as well as moderating the association’s Discord server."
+});
+
 // Conférences et tables rondes
 Object.assign(dictionary, {
   "14ᵉ Colloque des Jeunes Chercheureuses en Sciences de la Cognition (CJC-SCo) · Lille · 2026": "14th Conference of Young Researchers in Cognitive Science (CJC-SCo) · Lille · 2026",

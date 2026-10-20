@@ -2446,3 +2446,112 @@ em {
     animation: none;
   }
 }
+
+
+/* ============================================================
+   ACCUEIL — Repère bleu fixe (sans animation)
+   ============================================================ */
+.pulse {
+  background: #78b8e8;
+  animation: none;
+  transform: none;
+}
+.pulse::after {
+  content: none;
+  animation: none;
+}
+
+/* ============================================================
+   NAVIGATION — Bouton mobile plus confortable
+   ============================================================ */
+@media (max-width: 700px) {
+  .menu-toggle {
+    min-width: 110px;
+    min-height: 44px;
+    padding: 11px 18px;
+    font-size: 1rem;
+    border-radius: 16px;
+    cursor: pointer;
+  }
+  #nav.nav {
+    font-size: 1rem;
+  }
+  #nav.nav a,
+  #nav.nav .nav-drop-trigger {
+    font-size: .98rem;
+  }
+}
+
+/* ============================================================
+   ASSOCIATIONS — Monogramme de remplacement pour Nous Toutes
+   ------------------------------------------------------------
+   Ce repère n'est pas le logo officiel de l'association.
+   ============================================================ */
+#associations .association-monogram {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 76px;
+  height: 76px;
+  min-width: 76px;
+  flex: 0 0 76px;
+  border-radius: 15px;
+  background: #744693;
+  color: white;
+  font-size: 1.35rem;
+  font-weight: 800;
+  letter-spacing: -.04em;
+}
+@media (max-width: 700px) {
+  #associations .association-monogram {
+    width: 52px;
+    height: 52px;
+    min-width: 52px;
+    flex-basis: 52px;
+    font-size: 1rem;
+    border-radius: 11px;
+  }
+}
+
+/* ============================================================
+   CONTACT — Icônes cohérentes et accessibles
+   ============================================================ */
+.contact-panel .social-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.footer-social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 19px;
+  width: 19px;
+  height: 19px;
+  color: var(--ink);
+}
+.footer-social-icon svg {
+  display: block;
+  width: 19px;
+  height: 19px;
+}
+.footer-social-instagram { color: #c13584; }
+.footer-social-linkedin { color: #0a66c2; }
+.footer-social-google-scholar { color: #4285f4; }
+.footer-icon-monogram {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 19px;
+  height: 19px;
+  font-size: .65rem;
+  font-weight: 800;
+  line-height: 1;
+}
+.footer-orcid {
+  background: #a6ce39;
+  border-radius: 50%;
+  color: #fff;
+}
+.footer-osf { color: #2674b8; font-size: .53rem; }
+.footer-rg { color: #00a99d; font-size: .8rem; }
