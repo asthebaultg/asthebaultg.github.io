@@ -2666,3 +2666,15 @@ em {
     align-self: flex-start;
   }
 }
+
+
+/* ===== Logos des réseaux : fichiers SVG locaux ===== */
+.footer-social-icon img {
+  display: block;
+  width: 19px;
+  height: 19px;
+  object-fit: contain;
+}
+.footer-social-bluesky { color: #0085ff; }
+.footer-social-hal { color: #a85b35; }
+.footer-hal { font-size: .56rem; letter-spacing: -.02em; }
