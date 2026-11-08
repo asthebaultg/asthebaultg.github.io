@@ -55,6 +55,11 @@ document.querySelectorAll("[data-mediation-filter]").forEach(link => {
 
 // Traductions françaises / anglaises
 const dictionary = {
+  "Chargé·e de communication (depuis novembre 2022) · Cafétier·e (membre médiateur·ice)": "Communications officer (since November 2022) · Cafétier (science communicator member)",
+  "Rédaction d'articles de vulgarisation, communication et valorisation des contenus scientifiques des membres (vidéos, podcasts, livres), ainsi que participation aux actions de médiation en tant que cafétier·e.": "Writing popular science articles, communicating and promoting members’ content (videos, podcasts and books), and taking part in outreach activities as a cafétier.",
+  "Rédacteur·ice, chargé·e de communication et graphiste · 2022–2023": "Article writer, communications officer and graphic designer · 2022–2023",
+  "Rédaction d'articles de vulgarisation scientifique, réalisation d'entretiens, communication et création graphique pour Cortex Mag, la revue du LabEx Cortex.": "Writing popular science articles, conducting interviews, managing communications and creating graphics for Cortex Mag, the LabEx Cortex magazine.",
+
   "Description et méthodes": "Description and methods",
   "Recherche · Ingénieur·e de recherche · Inserm U1290 · RESHAPE · Université Lumière Lyon 2": "Research · Research engineer · Inserm U1290 · RESHAPE · Lumière Lyon 2 University",
   "Recherche · Ingénieur·e de recherche · Inserm U1290 · RESHAPE · Université Lumière Lyon 2 · iMIND": "Research · Research engineer · Inserm U1290 · RESHAPE · Lumière Lyon 2 University · iMIND",
@@ -596,7 +601,7 @@ Object.assign(dictionary, {
 // Traductions complétées pour les contenus actuels du portfolio
 Object.assign(dictionary, {"Étude des émotions morales et des facteurs individuels et situationnels influençant le jugement des transgressions.": "Study of moral emotions and individual and situational factors affecting judgements of transgressions.", "Statistiques inférentielles 1 et Statistiques inférentielles 2": "Inferential Statistics 1 and 2", "Évitement alimentaire et mouvements oculaires dans l'anorexie mentale restrictive.": "Food avoidance and eye movements in restrictive anorexia nervosa."});
 Object.assign(dictionary, {
-  "Partages d'expérience.": "Experience sharing.",
+  "Partages d'expérience": "Experience sharing",
   "01 / à propos": "01 / About",
   "Mes projets de": "My research",
   "recherche.": "projects.",
@@ -777,7 +782,7 @@ Object.assign(dictionary, {
   "European Association of Psychology and Law (EAPL) Annual Conference · Cluj-Napoca (Roumanie) · 2023": "European Association of Psychology and Law (EAPL) Annual Conference · Cluj-Napoca (Romania) · 2023",
   "14ᵉ Colloque des Jeunes Chercheureuses en Sciences de la Cognition (CJC-SCo) · Lille (France) · 2026": "14th Young Researchers in Cognitive Science Conference (CJC-SCo) · Lille (France) · 2026",
   "13ᵉ Colloque des Jeunes Chercheureuses en Sciences de la Cognition (CJC-SCo) · Paris (France) · 2023": "13th Young Researchers in Cognitive Science Conference (CJC-SCo) · Paris (France) · 2023",
-  "Partages d'expérience.": "Sharing experiences.",
+  "Partages d'expérience": "Sharing experiences",
   "Ouverture sur le monde professionnel": "Career development in cognitive science",
   "Etude des émotions morales et des facteurs individuels et situationnels influençant le jugement des transgressions.": "Study of moral emotions and individual and situational factors affecting judgements of transgressions.",
   "Inspiration graphique :": "Design inspired by:",
