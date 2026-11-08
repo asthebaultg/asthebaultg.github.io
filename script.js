@@ -742,7 +742,7 @@ Object.assign(dictionary, {
   "Participation à l'organisation de forums, colloques, conférences et tables rondes. Programmation, logistique et coordination.": "Contributing to the organisation of forums, conferences and panel discussions, including scheduling, logistics and coordination.",
   "Français (langue maternelle), anglais (courant), allemand et langue des signes française (conversationnel). Notions de néerlandais, italien et espagnol.": "French (native), English (fluent), German and French Sign Language (conversational); basic knowledge of Dutch, Italian and Spanish.",
   "Inspiration graphique :": "Design inspired by:",
-  "Quelques projets auxquels j'ai contribué, en laboratoire et sur le terrain.": "Selected projects I have contributed to, in the lab and in the field.",
+  "Quelques projets auxquels j'ai contribué.": "Selected projects I have worked on.",
   "Présentation d'Estigma et de mon expérience associative, ainsi que de mon parcours.": "Introducing Estigma, my involvement in associations and my career path.",
   "17 entretiens auprès d'étudiant·es de L1 à M1 en psychologie, droit, BG2S, MIASHS, sciences cognitives et IMST.": "17 interviews with students from first-year undergraduate to first-year master’s level in psychology, law, BG2S, MIASHS, cognitive science and IMST.",
   "Recherche · Inserm UMR 1350 : Physiopathologie et Traitement des Maladies Hépatiques · Université Claude Bernard Lyon 1": "Research · Inserm UMR 1350: Pathophysiology and Treatment of Liver Diseases · Claude Bernard Lyon 1 University",
