@@ -2702,3 +2702,118 @@ em {
   opacity: 1;
 }
 
+
+
+/* ===== Ressources p&#233;dagogiques et correction cross-browser ===== */
+.resource-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.resource-card{display:flex;flex-direction:column;min-width:0;gap:12px;padding:26px 28px;background:var(--white);color:var(--ink);border:1px solid var(--line);border-radius:22px}
+.resource-card h3{margin:0;font-size:1.22rem}.resource-card p{color:var(--muted);font-size:.94rem;margin:0 0 6px}
+.resource-type{font-size:.75rem;font-weight:700;color:var(--purple)}
+.resource-link,.resource-download{width:max-content;max-width:100%;color:var(--purple);font-size:.86rem;font-weight:700;text-decoration:none}
+.resource-link{margin-top:auto}.resource-download{font-weight:500}.resource-link:hover,.resource-download:hover{text-decoration:underline}
+.footer-professional{text-align:center;padding:0 0 18px;font-size:.68rem;font-style:italic;color:var(--muted);opacity:.75}
+.footer-professional a{color:inherit;text-decoration:none}.footer-professional a:hover{text-decoration:underline}
+@media(max-width:700px){.resource-grid{grid-template-columns:1fr}.resource-card{padding:22px}}
+
+/* #encadrement : couleurs explicites et identiques sur Firefox, Safari et Chrome.
+   Le fond du summary ne doit pas differer du fond details. */
+#encadrement .supervision details,
+#encadrement .supervision details > summary {
+  background-color:#fff !important;
+  color:#332e42 !important;
+  border-color:#e7e1ed !important;
+  color-scheme:light;
+  opacity:1 !important;
+  -webkit-text-fill-color:currentColor;
+}
+#encadrement .supervision details > summary {
+  display:list-item;
+  list-style:disclosure-closed inside;
+  border:0 !important;
+  padding:0;
+  margin:0;
+  cursor:pointer;
+  font-weight:700;
+}
+#encadrement .supervision details[open] > summary{list-style:disclosure-open inside}
+#encadrement .supervision details > p{color:#686376 !important;-webkit-text-fill-color:currentColor}
+:root[data-theme="dark"] #encadrement .supervision details,
+:root[data-theme="dark"] #encadrement .supervision details > summary {
+  background-color:#282432 !important;
+  color:#f3eefb !important;
+  border-color:#50445f !important;
+  color-scheme:dark;
+}
+:root[data-theme="dark"] #encadrement .supervision details > p{color:#cfc6dc !important}
+@media(prefers-color-scheme:dark){
+  :root:not([data-theme="light"]) #encadrement .supervision details,
+  :root:not([data-theme="light"]) #encadrement .supervision details > summary {
+    background-color:#282432 !important;
+    color:#f3eefb !important;
+    border-color:#50445f !important;
+    color-scheme:dark;
+  }
+  :root:not([data-theme="light"]) #encadrement .supervision details > p{color:#cfc6dc !important}
+}
+
+
+/* ===== Correction du mode sombre : Encadrements, Firefox et Safari ===== */
+/* #encadrement : couleurs explicites et identiques sur Firefox, Safari et Chrome.
+   Le fond du summary ne doit pas differer du fond details. */
+#encadrement .supervision details,
+#encadrement .supervision details > summary {
+  background-color:#fff !important;
+  color:#332e42 !important;
+  border-color:#e7e1ed !important;
+  color-scheme:light;
+  opacity:1 !important;
+  -webkit-text-fill-color:currentColor;
+}
+#encadrement .supervision details > summary {
+  display:list-item;
+  list-style:disclosure-closed inside;
+  border:0 !important;
+  padding:0;
+  margin:0;
+  cursor:pointer;
+  font-weight:700;
+}
+#encadrement .supervision details[open] > summary{list-style:disclosure-open inside}
+#encadrement .supervision details > p{color:#686376 !important;-webkit-text-fill-color:currentColor}
+:root[data-theme="dark"] #encadrement .supervision details,
+:root[data-theme="dark"] #encadrement .supervision details > summary {
+  background-color:#282432 !important;
+  color:#f3eefb !important;
+  border-color:#50445f !important;
+  color-scheme:dark;
+}
+:root[data-theme="dark"] #encadrement .supervision details > p{color:#cfc6dc !important}
+@media(prefers-color-scheme:dark){
+  :root:not([data-theme="light"]) #encadrement .supervision details,
+  :root:not([data-theme="light"]) #encadrement .supervision details > summary {
+    background-color:#282432 !important;
+    color:#f3eefb !important;
+    border-color:#50445f !important;
+    color-scheme:dark;
+  }
+  :root:not([data-theme="light"]) #encadrement .supervision details > p{color:#cfc6dc !important}
+}
+
+/* Contraste garanti même lorsque Firefox applique ses couleurs natives aux details. */
+#encadrement .supervision details,
+#encadrement .supervision details > summary,
+#encadrement .supervision details > p { -webkit-appearance:none; appearance:none; }
+#encadrement .supervision details > summary { list-style:none !important; }
+#encadrement .supervision details > summary::-webkit-details-marker {display:none}
+#encadrement .supervision details > summary::before {content:"▸";display:inline-block;color:inherit;margin-right:.65rem;transform-origin:center;transition:transform .18s}
+#encadrement .supervision details[open] > summary::before {transform:rotate(90deg)}
+#encadrement .supervision details > summary {padding:.2rem 0;white-space:normal;overflow-wrap:anywhere;}
+#encadrement .supervision details {overflow:hidden;}
+
+/* ===== Ressources : outil statistique reunifie ===== */
+.resource-card-featured { grid-column:1 / -1; }
+.resource-featured-content { display:grid;grid-template-columns:minmax(0,1.6fr) minmax(235px,.7fr);gap:26px;align-items:center;width:100%; }
+.resource-card-featured .resource-type{display:block;margin-bottom:12px}
+.resource-actions{display:flex;flex-direction:column;align-items:flex-start;gap:13px}
+.resource-actions .resource-link{margin-top:0}
+@media(max-width:700px){.resource-featured-content{grid-template-columns:1fr;gap:18px}}

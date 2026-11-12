@@ -792,6 +792,38 @@ Object.assign(dictionary, {
   "Thébault Guiochon, A., Vives, E., Revillard, V., Trémolière, B., Djeriouat, H.· En évaluation": "Thébault Guiochon, A., Vives, E., Revillard, V., Trémolière, B., Djeriouat, H. · Under review"
 });
 
+
+// Traductions des ressources pedagogiques
+Object.assign(dictionary, {
+  "Ressources": "Resources",
+  "Mes": "My",
+  "ressources.": "resources.",
+  "Télécharger": "Download",
+  "Tutoriels, outils interactifs et fiches pratiques pour concevoir des expériences et analyser des données.": "Tutorials, interactive tools and practical sheets for designing experiments and analysing data.",
+  "Outil interactif · Statistiques": "Interactive tool · Statistics",
+  "Choisir un test statistique": "Choosing a statistical test",
+  "Un parcours guidé pour identifier les familles de tests selon tes variables, tes hypothèses et ton plan d'étude.": "A guided tool to identify suitable test families based on your variables, hypotheses and study design.",
+  "Explorer l'outil ↗": "Explore the tool ↗",
+  "Télécharger l'aide-mémoire PDF ↓": "Download the statistical reference PDF ↓",
+  "Tutoriel · Expériences en ligne": "Tutorial · Online experiments",
+  "Programmer et diffuser une étude en ligne": "Designing and sharing an online study",
+  "OpenSesame, OSWeb, JATOS et Prolific : de la programmation au recueil des données, avec exemples de code.": "OpenSesame, OSWeb, JATOS and Prolific: from programming to data collection, with code examples.",
+  "Lire le tutoriel ↗": "Read the tutorial ↗",
+  "Tutoriel · Psychophysiologie": "Tutorial · Psychophysiology",
+  "Programmer des mesures physiologiques": "Programming physiological measurements",
+  "Synchroniser une tâche OpenSesame avec Biopac et préparer l'acquisition ECG, ICG et EDA.": "Synchronise an OpenSesame task with Biopac and prepare ECG, ICG and EDA recordings.",
+  "Fiche pratique · Statistiques": "Reference sheet · Statistics",
+  "Panorama des tests inférentiels": "Overview of inferential tests",
+  "Une carte détaillée des tests et de leurs commandes R et Python, à consulter ou imprimer.": "A detailed map of tests and corresponding R and Python commands, available to view or print.",
+  "Consulter le PDF ↗": "View the PDF ↗",
+  "Télécharger ↓": "Download ↓",
+  "Choisir et comprendre les tests statistiques": "Choosing and understanding statistical tests",
+  "Un outil de choix guidé accompagné d'un panorama consultable des méthodes, de leurs conditions et de leurs commandes R et Python.": "A guided test selection tool with a searchable overview of methods, their assumptions and R and Python commands.",
+  "Aide-mémoire · PDF ↓": "Quick reference · PDF ↓",
+  "Panorama détaillé · PDF ↓": "Detailed overview · PDF ↓",
+  "Informations professionnelles": "Business details"
+});
+
 const originalNodes = [...document.querySelectorAll("main,header,footer")].flatMap(root=>{const walker=document.createTreeWalker(root,NodeFilter.SHOW_TEXT);let n,out=[];while(n=walker.nextNode())if(n.nodeValue.trim())out.push([n,n.nodeValue]);return out});
 let english=false;document.querySelector("#lang-toggle")?.addEventListener("click",()=>{english=!english;document.documentElement.lang=english?"en":"fr";originalNodes.forEach(([node,fr])=>{const t=fr.trim();node.nodeValue=english?fr.replace(t,translateText(t)):fr});const b=document.querySelector("#lang-toggle");b.textContent=english?"FR":"EN";b.setAttribute("aria-label",english?"Passer en français":"Switch to English");});
 
