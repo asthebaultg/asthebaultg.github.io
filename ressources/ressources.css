@@ -1,0 +1,79 @@
+
+.resources-page{background:var(--white);color:var(--ink)}
+.resources-top{position:sticky;top:0;z-index:10;background:var(--white);border-bottom:1px solid var(--line)}
+.resources-nav{max-width:1080px;margin:auto;padding:14px 22px;display:flex;align-items:center;justify-content:space-between;gap:14px}
+.resources-nav a{text-decoration:none;font-weight:700}.resources-nav .brand{font-size:1.2rem}
+.resources-layout{max-width:1080px;margin:0 auto;padding:55px 22px 85px}
+.resources-eyebrow{font-size:.77rem;letter-spacing:.12em;text-transform:uppercase;font-weight:700;color:var(--purple)}
+.resources-layout h1{font-size:clamp(2.1rem,5vw,3.5rem);margin:15px 0 18px}
+.resources-description{font-size:1.09rem;color:var(--muted);max-width:740px}
+.resources-card{border:1px solid var(--line);background:var(--white);border-radius:20px;padding:24px;margin:20px 0}
+.resources-card h2{font-size:1.5rem;margin:0 0 14px}
+.resources-card h3{margin:22px 0 10px}
+.resources-card p,.resources-card li{line-height:1.8}
+.resources-card pre{background:#23202e;color:#f6ecff;border-radius:13px;padding:18px;max-width:100%;overflow:auto;font-size:.83rem;line-height:1.55;white-space:pre}
+.resources-card code:not(pre code){background:var(--lavender);padding:2px 5px;border-radius:5px}
+.resources-card a,.resources-links a{color:var(--purple)}
+.resources-card blockquote{margin:1rem 0;padding:12px 18px;border-left:3px solid var(--purple);background:var(--lavender)}
+.resources-card img{max-width:100%;height:auto}
+.resources-card details{border:1px solid var(--line);padding:14px;border-radius:12px;margin:10px 0}
+.resources-card summary{font-weight:700;cursor:pointer}
+.resources-links{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+.resources-links a{border:1px solid var(--line);padding:9px 15px;border-radius:99px;text-decoration:none;font-weight:700}
+.resources-notice{background:var(--lavender);border-radius:14px;padding:16px 20px;margin:22px 0;color:var(--ink)}
+.tutorial-toc{margin:25px 0;padding:20px;border:1px solid var(--line);border-radius:14px}
+.tutorial-toc a{display:block;padding:4px 0;color:var(--purple)}
+.tutorial-body h1{font-size:1.85rem;margin-top:42px}.tutorial-body h2{font-size:1.4rem;margin:30px 0 14px}.tutorial-body h3{font-size:1.1rem;margin:23px 0 10px}
+.tutorial-body pre{position:relative}.copy-code{float:right;cursor:pointer;background:#e9d9fa;color:#241c36;border:0;border-radius:8px;padding:6px 10px;font:inherit;font-weight:700;font-size:.75rem;margin:0 0 10px 12px}
+.resources-card .missing-figure{font-size:.86rem;font-style:italic;color:var(--muted);border:1px dashed var(--line);border-radius:10px;padding:11px}
+.resources-form{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.resources-form label{display:block;font-weight:700;font-size:.85rem;margin-bottom:8px;color:var(--ink)}
+.resources-form select{width:100%;min-width:0;padding:12px;border:1px solid var(--line);border-radius:10px;background:var(--white);color:var(--ink);font:inherit}
+.resources-result{border-left:4px solid var(--purple);padding:18px 22px;background:var(--lavender);border-radius:0 16px 16px 0}
+.resources-result h3{margin:0 0 6px}.resources-result p{margin:8px 0}.resources-result small{display:block;margin-top:12px}
+@media(max-width:700px){.resources-layout{padding:32px 17px 70px}.resources-card{padding:18px}.resources-form{grid-template-columns:1fr}.resources-nav{padding:13px 17px}}
+
+/* ===== Illustrations et structure des tutoriels ===== */
+.tutorial-body figure{margin:1.2rem 0;max-width:100%}
+.tutorial-body figure img,.tutorial-body img{display:block;max-width:100%;width:auto;height:auto;border-radius:12px;margin:12px auto;border:1px solid var(--line)}
+.tutorial-body .tutorial-help{background:var(--lavender);color:var(--ink);border-left:3px solid var(--purple);padding:14px 17px;border-radius:10px;margin:0 0 25px;line-height:1.65}
+.tutorial-body h2{font-size:1.45rem;margin:2rem 0 1rem}.tutorial-body h3{font-size:1.23rem;margin:1.5rem 0 .7rem}.tutorial-body h4{font-size:1.07rem;margin:1.3rem 0 .6rem}
+.tutorial-body pre{position:relative;padding-top:46px;overflow-x:auto}
+.tutorial-body pre .copy-code{position:absolute;top:8px;right:9px;cursor:pointer;background:#e9dafa;color:#2b203c;border:0;border-radius:7px;font-size:.76rem;padding:5px 10px}
+.tutorial-body aside{padding:12px 16px;background:var(--lavender);border-left:3px solid var(--purple);border-radius:10px;margin:16px 0}
+.tutorial-body aside img{display:none}
+.tutorial-body ul{padding-left:1.4rem}.tutorial-body li{overflow-wrap:anywhere}.tutorial-body pre{white-space:pre;max-width:100%}
+@media(max-width:700px){.tutorial-body img{max-height:65vh;object-fit:contain}}
+
+/* ===== Lisibilite des mises en evidence des tutoriels ===== */
+.tutorial-body mark {background:var(--lavender);color:var(--ink);padding:.08em .16em;border-radius:4px;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.tutorial-body mark code,.tutorial-body code:not(pre code){color:var(--ink);background:var(--lavender);border:1px solid var(--line);font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:.87em;overflow-wrap:anywhere}
+.tutorial-body pre code{color:#f6ecff !important;background:transparent !important;border:none !important}
+.resources-card .method-filters{margin:18px 0 4px}
+.method-filters input{width:100%;padding:12px;border:1px solid var(--line);background:var(--white);color:var(--ink);border-radius:10px;font:inherit}
+.methods-count{font-size:.8rem;color:var(--muted)}
+.methods-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.resources-card .method-item{margin:0;padding:15px;background:var(--white);border:1px solid var(--line);border-radius:13px;min-width:0}
+.method-item summary{font-weight:700;color:var(--ink)}
+.method-item p{font-size:.88rem;color:var(--muted);line-height:1.6}
+.method-item code{display:block;margin:7px 0;padding:7px 9px;background:var(--lavender);color:var(--ink);font-size:.78rem;white-space:normal;overflow-wrap:anywhere}
+.method-item[hidden]{display:none !important}
+@media(max-width:700px){.methods-grid{grid-template-columns:1fr}}
+
+/* ===== Guide interactif et catalogue statistique ===== */
+.resources-form > div[hidden]{display:none !important}
+.resources-form select,.resources-form input{min-height:43px}
+.resources-result{margin-top:20px}
+.resources-result ul{margin:.5rem 0;padding-left:1.3rem}
+.resources-result a{color:var(--purple);font-weight:700;text-underline-offset:3px}
+.resources-helper{font-size:.83rem;color:var(--muted);margin:12px 0 0}
+.resources-document{padding:14px 0;border-top:1px solid var(--line)}
+.resources-document h3{font-size:1.03rem;margin:0 0 8px}
+.resources-document .resources-links{margin:8px 0}
+.resources-sources{margin-top:20px;font-size:.8rem;color:var(--muted)}
+.resources-card .method-tags{font-size:.77rem;color:var(--purple);font-weight:700;margin:.5rem 0}
+.resources-card .method-caution{font-size:.82rem;color:var(--muted)}
+.resources-card .method-code{padding:9px 11px;background:var(--lavender);color:var(--ink);white-space:pre-wrap;overflow-wrap:anywhere;border-radius:8px;font-size:.78rem;margin:8px 0}
+.resources-card .method-code code{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;background:transparent;padding:0}
+.resources-form.method-filters{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+@media(max-width:700px){.resources-form.method-filters{grid-template-columns:1fr}}
